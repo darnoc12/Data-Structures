@@ -1,0 +1,14 @@
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\bin\Debug\Data StructureTest.dll
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\bin\Debug\Data StructureTest.pdb
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\bin\Debug\DataStructures.dll
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\bin\Debug\DataStructures.pdb
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\obj\Debug\Data StructureTest.csprojResolveAssemblyReference.cache
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\obj\Debug\Data StructureTest.dll
+c:\users\conrad\documents\visual studio 2013\Projects\DataStructures\Data StructureTest\obj\Debug\Data StructureTest.pdb
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\bin\Debug\Data StructureTest.dll
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\bin\Debug\Data StructureTest.pdb
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\bin\Debug\DataStructures.dll
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\bin\Debug\DataStructures.pdb
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\obj\Debug\Data StructureTest.csprojResolveAssemblyReference.cache
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\obj\Debug\Data StructureTest.dll
+C:\Users\Conrad\Documents\Visual Studio 2013\Projects\DataStructures\Data-Structures\Data StructureTest\obj\Debug\Data StructureTest.pdb
