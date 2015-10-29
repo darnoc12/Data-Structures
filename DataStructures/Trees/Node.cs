@@ -8,5 +8,8 @@ namespace DataStructures.Trees
 {
     public class Node<T> where T:IComparable<T>
     {
+        T Data;
+        Node<T> leftChild;
+        Node<T> rightChild;
     }
 }
