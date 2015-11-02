@@ -8,11 +8,14 @@ namespace DataStructures.Trees
 {
     public class BinaryTree<T> where T :IComparable<T>
     {
+        private int numNodes;
+        public int NumNodes { get { return numNodes; } }
         /*  The root node of the binary tree*/
         private TreeNode<T> root;
         public TreeNode<T> Root { get { return root; } set { root = value; } }
         public BinaryTree(){
             root = null;
+            numNodes = 0;
         }
         /* insert a value into the tree */
         public void insert(T value){
@@ -38,6 +41,7 @@ namespace DataStructures.Trees
             {
                 node = new TreeNode<T>(value);
                 return node;
+                numNodes++;
             }
             else
             {
@@ -79,7 +83,8 @@ namespace DataStructures.Trees
                     }
                     else
                     {
-                        node.Data = inOrderSuccessor(node).Data;
+                        node= inOrderSuccessor(node);
+                        node.RightChild=delete(node.RightChild, node.Data);
                         return node;
                     }
                 }//Node not the correct node to delete continue to search
@@ -94,6 +99,29 @@ namespace DataStructures.Trees
                     }
                 }
                }
+           public TreeNode<T> search(T value){
+               return search(root, value);
+           }
+           private TreeNode<T> search(TreeNode<T> node, T value){
+               if(node.Data.CompareTo(value)==0)
+               {
+                   return node;
+               }
+               else { 
+                  if(node == null)
+                  {
+                      return null;
+                  }
+                  else{
+                      if(node.Data.CompareTo(value)>0)
+                      {
+                          return search(node.LeftChild, value);
+                      }
+                      else
+                          return search(node.RightChild,value);
+                  }
+               }
+           }
             private TreeNode<T> inOrderSuccessor(TreeNode<T> node){
                 if(!node.RightChildExists()){
                     return node;

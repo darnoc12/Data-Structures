@@ -45,8 +45,14 @@ namespace Data_StructureTest
             Assert.AreEqual(tree.Root.LeftChild.Data, 3);
             Assert.AreEqual(tree.Root.RightChild.Data, 6);
 
+            tree.delete(5);
+            tree.delete(6);
+            tree.delete(7);
+            tree.delete(8);
+            tree.delete(1);
+            tree.delete(2);
             tree.delete(3);
-            Assert.AreEqual(tree.Root.LeftChild.Data, 2);
+            Assert.IsNull(tree.Root);
         }
     }
 }
