@@ -10,7 +10,7 @@ namespace DataStructures.Nodes
     {
         private T data;
         public T Data { get { return data; } set { data = value; } }
-        Node(T value){
+        public Node(T value){
             data = value;
         }
     }
