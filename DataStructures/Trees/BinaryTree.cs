@@ -28,31 +28,30 @@ namespace DataStructures.Trees
             {
                 if (root.Data.CompareTo(value) > 0)
                 {
-                 root.LeftChild =insert(root.LeftChild, value);
+                 root.LeftChild =Insert(root.LeftChild, value);
                 }
                 else
                 {
-                   root.RightChild= insert(root.RightChild, value);
+                   root.RightChild= Insert(root.RightChild, value);
                 }
             }
         }
-        private TreeNode<T> insert(TreeNode<T> node, T value){
+        protected TreeNode<T> Insert(TreeNode<T> node, T value){
             if (node == null)
             {
                 node = new TreeNode<T>(value);
                 return node;
-                numNodes++;
             }
             else
             {
                 if (node.Data.CompareTo(value) > 0)
                 {
-                    node.LeftChild=insert(node.LeftChild, value);
+                    node.LeftChild=Insert(node.LeftChild, value);
                     return node;
                 }
                 else
                 {
-                    node.RightChild=insert(node.RightChild, value);
+                    node.RightChild=Insert(node.RightChild, value);
                     return node;
                 }
             }

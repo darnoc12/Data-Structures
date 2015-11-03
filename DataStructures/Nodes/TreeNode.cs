@@ -13,11 +13,12 @@ namespace DataStructures.Trees
         public TreeNode<T> LeftChild { get { return leftChild; } set { leftChild = value; } }
         private TreeNode<T> rightChild;
         public TreeNode<T> RightChild { get { return rightChild; } set { rightChild = value; } }
-        //For use in a red-black tree
+        public int Balance;
         public TreeNode(T data):base(data)
         {
             leftChild = null;
             rightChild = null;
+            Balance = 0;
         }
         public bool RightChildExists(){
             return this.rightChild!=null;
