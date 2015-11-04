@@ -16,6 +16,11 @@ namespace DataStructures.Trees
             Root =Insert(Root,value);
             Root = BalanceNode(Root);
         }
+        public TreeNode<T> Insert(TreeNode<T> node, T value){
+           TreeNode<T> InsertedNode= base.Insert(node, value);
+           InsertedNode=BalanceNode(InsertedNode);
+           return InsertedNode;
+        }
         private TreeNode<T> BalanceNode(TreeNode<T> node){
             int balance = getHeight(node.LeftChild) - getHeight(node.RightChild);
             if (balance > 1){
